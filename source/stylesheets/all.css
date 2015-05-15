@@ -1,0 +1,157 @@
+html, body {
+  font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;
+  background: #fbfbfb;
+}
+
+.top-decoration {
+  background-image: url('http://www.nwsc.edu.hk/modx/bg-header-red.png');
+  padding: 0.1rem;
+  margin-bottom: 0.5rem; 
+}
+
+.common-head {
+  background-image: url('http://www.nwsc.edu.hk/modx/bg-header-red.png');
+  padding: 1.4rem;
+  overflow: hidden;
+  clear: both;
+}
+
+.logo {
+  width: 30%;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  float: left;
+}
+
+h1 {
+  padding: 1rem 0 0 1rem;
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: bold;
+  color: #f2e1c7;
+}
+
+h2 {
+  color: #f2e1c7;
+  font-size: 0.8rem;
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.sub-dir {
+    position: relative;
+    background-image: url('http://www.nwsc.edu.hk/modx/bg-sub-dir.jpg');
+    padding: 1.5rem;
+}
+
+.sub-dir:after {
+    background: linear-gradient(-45deg, #fbfbfb -24px, transparent 0), linear-gradient(63deg, #fbfbfb 5px, transparent 0);
+    background-size: 7px 34px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+}
+
+.nav-root {
+  width: 70%;
+  float: left;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav a, .nav a:link, .nav a:visited, .nav a:hover, .nav a:active {
+  padding-right: 1rem;
+  text-decoration: none;
+}
+
+.nav-root a, .nav-root a:link, .nav-root a:visited {
+  color: #f2e1c7;
+  text-decoration: none;
+}
+
+.nav-root a:hover, .nav-root a:active {
+  color: #E4CC91;
+  text-decoration: none;
+}
+
+.nav-subdir {
+  line-height: 1.5rem;
+}
+
+.nav-subdir a, .nav-subdir a:link, .nav-subdir a:visited  {
+  color: #43403c;
+  text-decoration: none;
+}
+
+.nav-subdir a:hover, .nav-subdir a:active {
+  color: #b74527;
+  text-decoration: none;
+}
+
+.footer-container {
+  background:#eee;
+  margin-top: 2rem;
+  border-top: solid 1px #e2e1e1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer {
+  width: 900px;
+  margin: auto;
+}
+
+.bottom-item {
+  float: left;
+  padding: 1.5rem 3rem;
+}
+
+.footer img {
+  width: 50px;
+  float: left;
+  padding: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.vertical-line {
+  float: left;
+  background: url("http://www.nwsc.edu.hk/modx/vertical_line.png");
+  height: 7rem;
+  width: 2px;
+  margin: 0 0 0 2rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.5rem;
+  color: #43403c;
+}
+
+.footer p a {
+  color: #9b4901;
+  text-decoration: underline;
+}
+
+.bottom-item img {
+  width: 30px;
+  padding: 0 0.5rem 0 0;
+}
+
+.copyright {
+  clear: both;
+  padding-bottom: 0.5rem; 
+  text-align: right;
+}
