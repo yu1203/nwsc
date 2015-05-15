@@ -150,6 +150,10 @@ h3 {
   padding: 0 0.5rem 0 0;
 }
 
+.bottom-item img:hover {
+  opacity: 0.8;
+}
+
 .copyright {
   clear: both;
   padding-bottom: 0.5rem; 
