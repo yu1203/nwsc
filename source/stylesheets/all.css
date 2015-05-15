@@ -105,6 +105,15 @@ h2 {
   width: 100%;
 }
 
+.hk-building {
+  width: 80%;
+  margin: auto;
+}
+
+.footer-container img {
+  width: 100%;
+}
+
 .footer {
   width: 900px;
   margin: auto;
