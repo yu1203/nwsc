@@ -210,6 +210,7 @@ h3 {
   margin: 0;
   font-size: 0.5rem;
   color: #43403c;
+  padding-left: 1rem;
 }
 
 .footer p a {
@@ -224,6 +225,11 @@ h3 {
 
 .bottom-item img:hover {
   opacity: 0.8;
+}
+
+.tel img, .fax img{
+  width: 19px;
+  padding-bottom: 1px;
 }
 
 .copyright {
