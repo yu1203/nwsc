@@ -37,7 +37,7 @@ h2 {
   color: #f2e1c7;
   font-size: 0.8rem;
   margin: 0;
-  padding-left: 1.5rem;
+  padding-left: 1.1rem;
 }
 
 .sub-dir {
@@ -86,7 +86,11 @@ h2 {
   line-height: 1.5rem;
 }
 
-.nav-subdir a, .nav-subdir a:link, .nav-subdir a:visited  {
+.nav-subdir a:target{
+  color: #fff;
+}
+
+.nav-subdir a, .nav-subdir a:link, .nav-subdir a:visited {
   color: #43403c;
   text-decoration: none;
 }
@@ -161,9 +165,7 @@ h4 {
 
 .footer-container {
   background:#eee;
-  margin-top: 2rem;
   border-top: solid 1px #e2e1e1;
-  width: 100%;
 }
 
 .hk-building {
@@ -171,24 +173,19 @@ h4 {
   margin: auto;
 }
 
-.footer-container img {
-  width: 100%;
-}
-
 .footer {
   width: 900px;
+  height: 340px;
   margin: auto;
+  background: url('http://www.nwsc.edu.hk/modx/footer2.png');
+  background-size: 113%;
+  background-position: -115px 0px;
+  position: relative;
 }
 
 .bottom-item {
-  float: left;
+  float: right;
   padding: 1.5rem 3rem;
-}
-
-.footer img {
-  width: 50px;
-  float: left;
-  padding: 1.5rem;
 }
 
 h3 {
@@ -211,9 +208,12 @@ h3 {
   padding-left: 2rem;
 }
 
-.footer p a {
+.footer a {
   color: #9b4901;
+  font-size: 0.5rem;
   text-decoration: underline;
+  margin: 0;
+  padding-left: 2rem;
 }
 
 .bottom-item img {
