@@ -6,11 +6,33 @@
     <title><%= current_page.data.title || "The Middleman" %></title>
     <%= stylesheet_link_tag "normalize", "all" %>
     <%= javascript_include_tag  "all" %>
+    <script type="text/javascript" src="http://www.nwsc.edu.hk/modx/assets/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://www.nwsc.edu.hk/modx/assets/owl-carousel/owl.carousel.js"></script>
+    <link rel="stylesheet" href="http://www.nwsc.edu.hk/modx/assets/owl-carousel/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.nwsc.edu.hk/modx/assets/owl-carousel/owl.theme.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.nwsc.edu.hk/modx/assets/js/google-code-prettify/prettify.css" type="text/css" />
   </head>
   
   <body class="<%= page_classes %>">
     <%= partial "layouts/title_bar" %>
     <%= yield %>
     <%= partial "layouts/footer" %>
+    <!-- Demo -->
+<script type="text/javascript">
+$(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+
+      navigation : false,
+      stopOnHover: true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem: true,
+      items : 2,
+      itemsDesktop : [1199,2],
+      itemsDesktopSmall : [979,2],
+      autoPlay: 2000,
+      });
+    });
+  </script>
   </body>
 </html>
