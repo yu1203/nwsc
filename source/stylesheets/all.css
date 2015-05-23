@@ -1,6 +1,7 @@
 html, body {
   font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;
-  background: #fbfbfb;
+  background: url('http://www.nwsc.edu.hk/modx/background.png') repeat;
+  height: 100%;
 }
 
 .top-decoration {
@@ -13,12 +14,10 @@ html, body {
   background-image: url('http://www.nwsc.edu.hk/modx/bg-header-red.png');
   padding: 1.4rem;
   overflow: hidden;
-  clear: both;
 }
 
 .logo {
   width: 30%;
-  box-sizing: border-box;
 }
 
 h1.title-c, h2.title-e {
@@ -115,7 +114,7 @@ h2.title-e {
   width: 80%;
   margin: 5rem auto;
   background: white;
-  overflow: hidden;
+  height: 320px;
 }
 
 .block-left, .block-right {
@@ -123,28 +122,27 @@ h2.title-e {
   float: left;
   box-sizing: border-box;
   position: relative;
-}
-
-.block-left {
-}
-
-.block-right {
-  padding-left: 3rem;
   border: solid 1px #e2e1e1;
-  border-left: solid 1px #e2e1e1;
-  background: url('http://www.nwsc.edu.hk/modx/hk-map.png') no-repeat bottom right;
-  background-size: 75%;
+  height: 100%;
+}
+
+.block-left, .block-right, .circle-left, .circle-right, .border {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.block-right:hover {
-  border-top: solid 1px darkred;
-  border-right: solid 1px darkred;
-  border-bottom: solid 1px darkred;
+.block-left {
+  border-right: 0;
 }
+
+.block-right {
+  padding-left: 3rem;
+  background: url('http://www.nwsc.edu.hk/modx/hk-map.png') no-repeat right;
+  background-size: 75%;
+}
+
 
 h5.index-content-title {
   font-size: 1.5rem;
@@ -154,7 +152,7 @@ h5.index-content-title {
 }
 
 .border {
-  border-top: solid 5px #efefef;
+  border-top: solid 3px #efefef;
   border-bottom: solid 1px #efefef;
   height: 4px;
   width: 150px;
@@ -187,6 +185,10 @@ p.branch-name-p {
   float: left;
 }
 
+.row1 {
+  margin-top: 1rem; 
+}
+
 .row1, .row2 {
   width: 100%;
 }
@@ -216,9 +218,7 @@ p.branch-name-p {
   position: absolute;
   top: 120px;
   background-size: 70px;
-  transition: all 0.5s ease;
 }
-
 
 .circle-left {
   background-position: 4px;
@@ -230,6 +230,15 @@ p.branch-name-p {
   background-position: -39px;
   border-radius: 0 35px 35px 0;
   left: 0;
+}
+
+.block-right:hover .circle-right, .block-left:hover .circle-left {
+  background: darkred;
+}
+
+.block-right:hover .border, .block-left:hover .border{
+  border-top: solid 3px darkred;
+  border-bottom: solid 1px darkred;
 }
 
 .footer-container {
@@ -295,7 +304,6 @@ p.footer-p {
 }
 
 .copyright {
-  padding-bottom: 0.5rem; 
   text-align: right;
   position: absolute;
   bottom: 0;
