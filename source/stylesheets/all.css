@@ -21,11 +21,11 @@ html, body {
   box-sizing: border-box;
 }
 
-h1, h2 {
+h1.title-c, h2.title-e {
   float: left;
 }
 
-h1 {
+h1.title-c {
   padding: 1rem 0 0 1rem;
   font-size: 2.5rem;
   margin: 0;
@@ -33,7 +33,7 @@ h1 {
   color: #f2e1c7;
 }
 
-h2 {
+h2.title-e {
   color: #f2e1c7;
   font-size: 0.8rem;
   margin: 0;
@@ -114,7 +114,6 @@ h2 {
 .index-content {
   width: 80%;
   margin: 5rem auto;
-  border: solid 1px #e2e1e1;
   background: white;
   overflow: hidden;
 }
@@ -131,12 +130,23 @@ h2 {
 
 .block-right {
   padding-left: 3rem;
+  border: solid 1px #e2e1e1;
   border-left: solid 1px #e2e1e1;
   background: url('http://www.nwsc.edu.hk/modx/hk-map.png') no-repeat bottom right;
   background-size: 75%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-h5 {
+.block-right:hover {
+  border-top: solid 1px darkred;
+  border-right: solid 1px darkred;
+  border-bottom: solid 1px darkred;
+}
+
+h5.index-content-title {
   font-size: 1.5rem;
   margin: 0;
   padding: 1.5rem 0 0.5rem 1.5rem;
@@ -151,7 +161,7 @@ h5 {
   margin: 0 0 1rem 1rem;
 }
 
-.block-left p {
+p.new-activity-p {
   color: #43403c;
 }
 
@@ -160,7 +170,7 @@ h5 {
   padding: 0 2.5rem 0 0.2rem;
 }
 
-.block-right p {
+p.branch-name-p {
   margin: 0;
   width: 64px;
   text-align: center;
@@ -209,9 +219,6 @@ h5 {
   transition: all 0.5s ease;
 }
 
-.block-right:hover .circle-right {
-  background: blue;
-}
 
 .circle-left {
   background-position: 4px;
@@ -253,16 +260,11 @@ h5 {
   padding: 7.5rem 3rem 0 3rem
 }
 
-.bottom-item p , .bottom-item img{
+p.bottom-item-p, .bottom-item img{
   float: left;
 }
 
-h3 {
-  margin: 0;
-  padding-bottom: 1rem;
-}
-
-.footer p {
+p.footer-p {
   margin: 0;
   font-size: 0.8rem;
   color: #43403c;
@@ -300,8 +302,9 @@ h3 {
   width: 100%;
 }
 
-.copyright p {
+p.copyright-p {
   font-size: 0.5rem;
+  color: #43403c;
 }
 
 .copyright a, .copyright a:link, .copyright a:visited {
