@@ -6,7 +6,7 @@ p.sub-dir-heading {
 }
 
 .course-photo-area {
-  height: 1000px;
+  height: 3500px;
   padding: 2.5rem;
 }
 
@@ -15,7 +15,7 @@ p.sub-dir-heading {
 }
 
 .course-photo-box img {
-  width: 45%;
+  width: 450px;
   padding-bottom: 1.5rem;
   border-bottom: dashed 1px #43403c;
 }
