@@ -6,20 +6,157 @@ p.sub-dir-heading {
 }
 
 .course-photo-area {
-  height: 2300px;
+  height: 2400px;
   padding: 2.5rem;
 }
 
 .course-photo-box {
-  display: inline;
+  margin: 10px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.mask {
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0
 }
 
 .course-photo-box img {
   width: 450px;
   padding-bottom: 1.5rem;
   border-bottom: dashed 1px #43403c;
+  display: block;
+  position: relative  
+}
+
+.course-photo-box h2 {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 4rem;
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 2.5rem 0;
+}
+
+.course-photo-box a.info {
+  text-decoration: none;
+  padding: 7px 14px;
+  color: #555555;
+  box-shadow: 0 0 1px #000
+}
+.course-photo-box a.info:hover {
+  box-shadow: 0 0 5px #000
+}
+
+.mask-area .mask {
+  background-color: rgba(255, 255, 255, 0.7);
+  top: -200px;
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out 0.5s;
+  -moz-transition: all 0.3s ease-out 0.5s;
+  -o-transition: all 0.3s ease-out 0.5s;
+  -ms-transition: all 0.3s ease-out 0.5s;
+  transition: all 0.3s ease-out 0.5s;
+}
+.mask-area h2 {
+  -webkit-transform: translateY(-200px);
+  -moz-transform: translateY(-200px);
+  -o-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0.2s ease-in-out 0.1s;
+  -moz-transition: all 0.2s ease-in-out 0.1s;
+  -o-transition: all 0.2s ease-in-out 0.1s;
+  -ms-transition: all 0.2s ease-in-out 0.1s;
+  transition: all 0.2s ease-in-out 0.1s;
+}
+
+.mask-area a.info {
+  -webkit-transform: translateY(-200px);
+  -moz-transform: translateY(-200px);
+  -o-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0.2s ease-in-out 0.3s;
+  -moz-transition: all 0.2s ease-in-out 0.3s;
+  -o-transition: all 0.2s ease-in-out 0.3s;
+  -ms-transition: all 0.2s ease-in-out 0.3s;
+  transition: all 0.2s ease-in-out 0.3s;
+}
+.mask-area:hover .mask {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  top: 0px;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-animation: bounceY 0.9s linear;
+  -moz-animation: bounceY 0.9s linear;
+  -ms-animation: bounceY 0.9s linear;
+  animation: bounceY 0.9s linear;
+}
+.mask-area:hover h2 {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -ms-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.mask-area:hover a.info {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+}
+@keyframes bounceY {
+  0% { transform: translateY(-205px);}
+  40% { transform: translateY(-100px);}
+  65% { transform: translateY(-52px);}
+  82% { transform: translateY(-25px);}
+  92% { transform: translateY(-12px);}
+  55%, 75%, 87%, 97%, 100% { transform: translateY(0px);}
+}
+@-moz-keyframes bounceY {
+  0% { -moz-transform: translateY(-205px);}
+  40% { -moz-transform: translateY(-100px);}
+  65% { -moz-transform: translateY(-52px);}
+  82% { -moz-transform: translateY(-25px);}
+  92% { -moz-transform: translateY(-12px);}
+  55%, 75%, 87%, 97%, 100% { -moz-transform: translateY(0px);}
+}
+@-webkit-keyframes bounceY {
+  0% { -webkit-transform: translateY(-205px);}
+  40% { -webkit-transform: translateY(-100px);}
+  65% { -webkit-transform: translateY(-52px);}
+  82% { -webkit-transform: translateY(-25px);}
+  92% { -webkit-transform: translateY(-12px);}
+  55%, 75%, 87%, 97%, 100% { -webkit-transform: translateY(0px);}
 }
 
 .course-photo-box-right {
-  padding-left: 6rem;
+  float: right;
 }
