@@ -37,6 +37,7 @@ p.sub-dir-heading {
 
 .course-photo-box a.info {
   text-decoration: none;
+  letter-spacing: 0.1rem;
   padding: 7px 14px;
   color: black;
   text-shadow: 1px 0 black;
